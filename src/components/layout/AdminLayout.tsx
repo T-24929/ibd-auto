@@ -21,7 +21,7 @@ export function AdminLayout() {
       <div className="flex-1 flex flex-col min-w-0 h-full overflow-hidden">
         <AdminHeader onOpenMobileNav={() => setMobileNavOpen(true)} />
 
-        <main className="flex-1 h-full overflow-y-auto overscroll-contain p-4 sm:p-6 lg:p-8 focus:outline-none">
+        <main className="flex-1 h-full overflow-y-auto overscroll-contain p-6 sm:p-6 lg:p-8 focus:outline-none">
           <div className="max-w-7xl mx-auto w-full">
             <Outlet />
           </div>

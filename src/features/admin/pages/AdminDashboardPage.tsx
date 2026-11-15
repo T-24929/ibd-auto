@@ -23,7 +23,9 @@ import {
 import { ErrorState } from '@/components/feedback'
 
 export function AdminDashboardPage() {
-  const [activeTab, setActiveTab] = useState<'appointments' | 'inventory' | 'inquiries'>('appointments')
+  const [activeTab, setActiveTab] = useState<
+    'appointments' | 'inventory' | 'inquiries'
+  >('appointments')
 
   const {
     data: vehicles = [],
@@ -76,7 +78,8 @@ export function AdminDashboardPage() {
     availableVehicles: vehicles.filter((v) => v.status === 'available').length,
     reservedVehicles: vehicles.filter((v) => v.status === 'reserved').length,
     soldVehicles: vehicles.filter((v) => v.status === 'sold').length,
-    pendingAppointments: appointments.filter((a) => a.status === 'pending').length,
+    pendingAppointments: appointments.filter((a) => a.status === 'pending')
+      .length,
     totalAppointments: appointments.length,
     unreadMessages: messages.filter((m) => !m.is_read).length,
   }
@@ -145,14 +148,14 @@ export function AdminDashboardPage() {
           onValueChange={(val) => setActiveTab(val as any)}
           className="w-full space-y-4"
         >
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border/50 pb-3">
-            <TabsList className="bg-muted/50 p-1 rounded-xl h-auto">
+          <div className="flex flex-col sm:flex-row sm:items-start justify-start gap-3 border-b border-border/50 pb-3">
+            <TabsList className="bg-muted/50  overflow-scroll sm:pl-1 pl-12  scrollbar-none rounded-xl h-auto">
               <TabsTrigger
                 value="appointments"
                 className="rounded-lg px-3 py-1.5 text-xs font-semibold gap-2 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-xs"
               >
                 <CalendarClock className="size-3.5" />
-                <span>Test Drives</span>
+                <span>Appoinments</span>
                 <span className="px-1.5 py-0.2 rounded-full text-[10px] bg-primary/10 text-primary">
                   {appointments.length}
                 </span>
@@ -162,7 +165,7 @@ export function AdminDashboardPage() {
                 className="rounded-lg px-3 py-1.5 text-xs font-semibold gap-2 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-xs"
               >
                 <Car className="size-3.5" />
-                <span>Showroom Fleet</span>
+                <span>Vehicles</span>
                 <span className="px-1.5 py-0.2 rounded-full text-[10px] bg-primary/10 text-primary">
                   {vehicles.length}
                 </span>
@@ -186,7 +189,12 @@ export function AdminDashboardPage() {
             </TabsList>
 
             <div className="flex items-center gap-2">
-              <Button asChild variant="ghost" size="sm" className="h-8 text-xs gap-1 text-primary cursor-pointer">
+              <Button
+                asChild
+                variant="ghost"
+                size="sm"
+                className="h-8 text-xs gap-1 text-primary cursor-pointer"
+              >
                 <Link to={viewAllLink.path}>
                   <span>{viewAllLink.label}</span>
                   <ArrowRight className="size-3" />

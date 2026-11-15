@@ -618,7 +618,7 @@ export function SmoothTab({
           {items.map((item, i) => (
             <div
               aria-labelledby={tabId(i)}
-              className="min-h-[220px] p-4 sm:p-6 outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
+              className="min-h-55 p-4 sm:p-6 outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset"
               id={panelId(i)}
               inert={i !== selected}
               key={item.id}
