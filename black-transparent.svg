@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-1130,0)">
+        <g id="Artboard1" transform="matrix(1,0,0,1,1130,0)">
+            <rect x="0" y="0" width="1080" height="1080" style="fill:none;"/>
+            <g transform="matrix(1,0,0,1,1.772367,-1.055153)">
+                <path d="M322.429,658.763L322.429,415.653L369.359,390.265L369.359,691.845L322.429,658.763Z" style="stroke:black;stroke-width:1px;"/>
+            </g>
+            <path d="M418.83,358.437L541.772,291.505L564.234,305.353L564.234,499.225C564.234,499.225 554.233,526.35 526.537,538.945C526.537,538.945 561.399,559.317 564.234,576.928C562.639,616.94 564.234,773.109 564.234,773.109L541.772,788.495L418.83,717.717L418.83,358.437ZM468.002,389.21L468.002,690.79L517.239,709.457L517.239,366.025L468.002,389.21Z" style="stroke:black;stroke-width:1px;"/>
+            <path d="M610.394,329.971L755.799,416.137L755.799,663.094L610.394,750.029C610.394,750.029 611.933,622.319 610.394,580.005C608.856,537.692 547.309,555.387 578.851,538.945C610.394,522.503 610.394,499.225 610.394,499.225L610.394,329.971ZM658.551,427.423L658.551,654.557L707.296,634.862L707.296,442.836L658.551,427.423Z" style="stroke:black;stroke-width:1px;"/>
+        </g>
+    </g>
+</svg>

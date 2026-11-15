@@ -1,0 +1,5 @@
+export * from './components/AboutHero'
+export * from './components/Stats'
+export * from './components/OurStory'
+export * from './components/TeamValues'
+export * from './pages/AboutPage'
